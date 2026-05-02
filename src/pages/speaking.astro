@@ -1,0 +1,213 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import speakingFca25 from '../assets/speaking-fca25.png';
+import speakingWeb3Lagos from '../assets/speaking-web3lagos.jpg';
+import speakingApiconf24 from '../assets/speaking-apiconf24.png';
+import speakingWtm24 from '../assets/speaking-wtm24.png';
+---
+
+<Layout 
+  title="Speaking | Motunrayo Koyejo" 
+  currentPage="speaking"
+>
+  <header style="padding: 80px 0 20px;">
+    <div class="wrap">
+      <div class="eyebrow">Speaking</div>
+      <h1>I've been on stage <em>twenty-plus times</em>, and I'm still not over it.</h1>
+    </div>
+  </header>
+
+  <section style="padding: 20px 0;">
+    <div class="wrap">
+      <div class="photo ratio-16-9" style="background-image: url('/src/assets/speaking-fca25.png'); margin: 24px 0 48px;"></div>
+      <div class="prose">
+        <p>I started speaking because I kept looking around at the engineers on stage and not seeing many who looked like me. Not many African women, especially not ones building payment infrastructure, especially not talking about the boring, crucial, unsexy parts of engineering. So I figured I'd be one. Now it's one of my favourite things I do: the mix of preparation and performance, the strange intimacy of a room full of strangers who chose to listen to you.</p>
+        <p>I speak mostly about backend architecture, API design, fintech, digital payments, and the particular texture of building infrastructure for financial inclusion on this continent. I also speak about being a woman in deep tech, because someone has to keep saying the quiet parts out loud.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Things I can <em>talk about</em> for an hour</h2>
+      <div class="mentor-programs">
+        <div class="program">
+          <div class="program-name">Backend architecture at scale</div>
+          <div class="program-detail">How to design systems that stay fast and stay up while transaction volume grows 10x.</div>
+        </div>
+        <div class="program">
+          <div class="program-name">API design for fintech</div>
+          <div class="program-detail">The patterns that work, the ones that look right but bite you later, and hard lessons from building payment and investment APIs.</div>
+        </div>
+        <div class="program">
+          <div class="program-name">Financial inclusion in Africa</div>
+          <div class="program-detail">What the infrastructure layer actually needs to do for fintech to reach the people it keeps claiming to serve.</div>
+        </div>
+        <div class="program">
+          <div class="program-name">Women in deep tech</div>
+          <div class="program-detail">Breaking in, staying in, and finding your voice in rooms where you're often the only one who looks like you.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>On <em>stage</em></h2>
+      <p class="section-intro">A few moments from recent conferences.</p>
+      <div class="photo-strip">
+        <div class="photo ratio-1-1" style="background-image: url('/src/assets/speaking-web3lagos.jpg'); background-position: center 20%;"></div>
+        <div class="photo ratio-1-1" style="background-image: url('/src/assets/speaking-apiconf24.png');"></div>
+        <div class="photo ratio-1-1" style="background-image: url('/src/assets/speaking-wtm24.png');"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>A <em>working</em> list of talks</h2>
+      <p class="section-intro">I'll keep adding as I remember them, and as new ones happen. The list skews recent because I haven't dug back through the old hard drives yet.</p>
+
+      <div class="talk">
+        <div class="talk-year">2026</div>
+        <div>
+          <span class="talk-type panel">Panel</span>
+          <div class="talk-title">Unscripted: Leading Beyond the Patterns We Inherited</div>
+          <div class="talk-venue">Women Techmakers Lagos · Lagos, Nigeria</div>
+          <div class="talk-links">
+            <a href="#">Slides ↗</a>
+            <a href="#">Recording ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-year">2025</div>
+        <div>
+          <span class="talk-type talk">Talk</span>
+          <div class="talk-title">Naija and AI: How smart tools are changing the way we work</div>
+          <div class="talk-venue">Jobberman</div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-year">2025</div>
+        <div>
+          <span class="talk-type media">Television</span>
+          <div class="talk-title">CBN Geo-Tagging rules and its implications for POS holders</div>
+          <div class="talk-venue">BusinessDay Television · Economy and Markets</div>
+          <div class="talk-links">
+            <a href="https://www.youtube.com/watch?v=aDKdVwafby4" target="_blank" rel="noopener">Watch ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-year">2025</div>
+        <div>
+          <span class="talk-type media">Television</span>
+          <div class="talk-title">What to know about the new National Payment Stack</div>
+          <div class="talk-venue">BusinessDay Television · Economy and Markets</div>
+          <div class="talk-links">
+            <a href="https://youtu.be/8gCctQXCMqE?t=12766" target="_blank" rel="noopener">Watch ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-year">2025</div>
+        <div>
+          <span class="talk-type panel">Panel</span>
+          <div class="talk-title">Beyond the Code: Navigating and Thriving as a Female Backend Developer in Africa</div>
+          <div class="talk-venue">FlaskCon Africa · Lagos, Nigeria</div>
+          <div class="talk-links">
+            <a href="https://www.youtube.com/live/G8M8Rly0t-I?si=G3_4r92kttITMKuX&t=12030" target="_blank" rel="noopener">Recording ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-year">2025</div>
+        <div>
+          <span class="talk-type keynote">Keynote</span>
+          <div class="talk-title">Your First Website Is Just the Beginning</div>
+          <div class="talk-venue">KidsThatCode · Lagos, Nigeria</div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-year">2025</div>
+        <div>
+          <span class="talk-type talk">Talk</span>
+          <div class="talk-title">Bridging Traditional Fintech with Decentralised Finance</div>
+          <div class="talk-venue">Web3 Lagos Conference 4.0 · Lagos, Nigeria</div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-year">2025</div>
+        <div>
+          <span class="talk-type panel">Panel</span>
+          <div class="talk-title">Empowering Women in API: Navigating the Tech Ladder from Developers to Leaders</div>
+          <div class="talk-venue">APIConf Lagos 2025 · Lagos, Nigeria</div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-year">2024</div>
+        <div>
+          <span class="talk-type talk">Talk</span>
+          <div class="talk-title">API Testing Strategies for Reliable and Scalable Software Systems</div>
+          <div class="talk-venue">APIConnect 2024 · Lagos, Nigeria</div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-year">2024</div>
+        <div>
+          <span class="talk-type talk">Talk</span>
+          <div class="talk-title">From Junior to Leader: Building a Solid Base for a Future In Software Engineering</div>
+          <div class="talk-venue">Tech Help Hub 2024 · Lagos, Nigeria</div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-year">2024</div>
+        <div>
+          <span class="talk-type workshop">Workshop</span>
+          <div class="talk-title">Implementing OAuth 2.0 for Secure API Access</div>
+          <div class="talk-venue">DevFest Lagos 2024 · Lagos, Nigeria</div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-year">2024</div>
+        <div>
+          <span class="talk-type talk">Talk</span>
+          <div class="talk-title">API Versioning: Building for Longevity and Adaptability</div>
+          <div class="talk-venue">APIConf Lagos 2024 · Lagos, Nigeria</div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-year">2024</div>
+        <div>
+          <span class="talk-type talk">Talk</span>
+          <div class="talk-title">API Security</div>
+          <div class="talk-venue">Women Techmakers · International Women's Day 2024</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-band">
+        <h3>Want me on your stage?</h3>
+        <p>I love conferences, workshops, and community events, especially ones focused on backend engineering, fintech, or women in tech. I travel well. I prepare thoroughly. I will almost certainly over-rehearse.</p>
+        <a class="cta-btn" href="mailto:koyejomotunrayo@gmail.com?subject=Speaking%20invitation">Invite me to speak</a>
+      </div>
+    </div>
+  </section>
+</Layout>

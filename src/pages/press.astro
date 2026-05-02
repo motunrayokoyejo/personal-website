@@ -1,0 +1,221 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import portraitPinkArmsCrossed from '../assets/portrait-pink-arms-crossed.jpg';
+import portraitPinkDesk from '../assets/portrait-pink-desk.jpg';
+import headshotCropped from '../assets/headshot-cropped.jpg';
+---
+
+<Layout 
+  title="Press Kit | Motunrayo Koyejo" 
+  currentPage="press"
+>
+  <header style="padding: 80px 0 20px;">
+    <div class="wrap">
+      <div class="eyebrow">Press kit</div>
+      <h1>Everything you need to <em>feature me</em>.</h1>
+      <p class="lede">Putting together an event program, show notes, or press piece? Grab what you need from here. The bios are copy-paste ready, the headshots are high-resolution, and the facts are already spelled right. I've tried to make this as easy as possible because you're probably on a deadline.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <h2><em>Headshots</em></h2>
+      <p class="section-intro">Studio shots, yours to use for event programs, press, or promo material. Click any image to download the full-resolution file.</p>
+      <div class="press-headshots">
+        <a class="press-headshot" href="/src/assets/portrait-pink-arms-crossed.jpg" download>
+          <div class="photo ratio-3-4" style="background-image: url('/src/assets/portrait-pink-arms-crossed.jpg');"></div>
+          <div class="dl-label">
+            <strong>Full · Portrait</strong>
+            <span class="dl-hint">Download ↓</span>
+          </div>
+        </a>
+        <a class="press-headshot" href="/src/assets/portrait-pink-desk.jpg" download>
+          <div class="photo ratio-3-4" style="background-image: url('/src/assets/portrait-pink-desk.jpg');"></div>
+          <div class="dl-label">
+            <strong>Seated · Portrait</strong>
+            <span class="dl-hint">Download ↓</span>
+          </div>
+        </a>
+        <a class="press-headshot" href="/src/assets/headshot-cropped.jpg" download>
+          <div class="photo ratio-3-4" style="background-image: url('/src/assets/headshot-cropped.jpg');"></div>
+          <div class="dl-label">
+            <strong>Tight crop · Headshot</strong>
+            <span class="dl-hint">Download ↓</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Quick <em>facts</em></h2>
+      <p class="section-intro">The basics that usually go in a speaker intro. Name pronunciation included because it's gotten butchered on enough stages that I figured I'd just put it here.</p>
+      <div class="press-facts">
+        <div class="press-fact">
+          <span class="press-fact-label">Name</span>
+          <span class="press-fact-value">Motunrayo Koyejo</span>
+        </div>
+        <div class="press-fact">
+          <span class="press-fact-label">Pronunciation</span>
+          <span class="press-fact-value">Moh-toon-RAH-yoh Koh-YAY-joh</span>
+        </div>
+        <div class="press-fact">
+          <span class="press-fact-label">Pronouns</span>
+          <span class="press-fact-value">she / her</span>
+        </div>
+        <div class="press-fact">
+          <span class="press-fact-label">Current role</span>
+          <span class="press-fact-value">Senior Backend Engineer, Cowrywise</span>
+        </div>
+        <div class="press-fact">
+          <span class="press-fact-label">Based in</span>
+          <span class="press-fact-value">Lagos, Nigeria</span>
+        </div>
+        <div class="press-fact">
+          <span class="press-fact-label">Speaking topics</span>
+          <span class="press-fact-value">Backend, fintech, APIs, women in tech</span>
+        </div>
+        <div class="press-fact">
+          <span class="press-fact-label">Languages</span>
+          <span class="press-fact-value">English, Yoruba</span>
+        </div>
+        <div class="press-fact">
+          <span class="press-fact-label">Website</span>
+          <span class="press-fact-value">motunrayokoyejo.com</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2><em>Bios</em>, in three sizes</h2>
+      <p class="section-intro">Pick the length that fits your space. Click "copy" and it's on your clipboard (no highlighting, no formatting weirdness, just done).</p>
+
+      <!-- Short bio -->
+      <div class="bio-block">
+        <div class="bio-block-header">
+          <span class="bio-block-label">Short · one sentence</span>
+          <span class="bio-block-count">~25 words</span>
+        </div>
+        <p class="bio-block-text" id="bio-short">Motunrayo Koyejo is a senior backend engineer building fintech infrastructure across Africa, a speaker at 20+ conferences, and a mentor to early-career women in tech.</p>
+        <div style="margin-top: 16px;">
+          <button class="copy-btn" data-copy-target="bio-short">Copy short bio</button>
+        </div>
+      </div>
+
+      <!-- Medium bio -->
+      <div class="bio-block">
+        <div class="bio-block-header">
+          <span class="bio-block-label">Medium · one paragraph</span>
+          <span class="bio-block-count">~70 words</span>
+        </div>
+        <p class="bio-block-text" id="bio-medium">Motunrayo Koyejo is a senior backend engineer with over five years of experience building secure, scalable financial infrastructure. She's currently at Cowrywise, where she works on payments, reconciliation, and high-throughput APIs for an investment platform serving 500,000+ users. Outside of engineering, Motunrayo has spoken at 20+ conferences on backend architecture, API design, and fintech, and mentors early-career women through programs including Wentors, HerSynergy × TechHer, and She Code Africa.</p>
+        <div style="margin-top: 16px;">
+          <button class="copy-btn" data-copy-target="bio-medium">Copy medium bio</button>
+        </div>
+      </div>
+
+      <!-- Long bio -->
+      <div class="bio-block">
+        <div class="bio-block-header">
+          <span class="bio-block-label">Long · two paragraphs</span>
+          <span class="bio-block-count">~165 words</span>
+        </div>
+        <p class="bio-block-text" id="bio-long">Motunrayo Koyejo is a senior backend engineer specialising in financial infrastructure. She's currently at Cowrywise, where she leads backend work across payments, disbursement, and reconciliation for an investment platform serving over 500,000 users. Before that, she led technical strategy for Brass's Kenya market expansion, work that drove 95% revenue growth and onboarded 60% more business clients. Over five years in fintech, she's shipped systems that handle hundreds of thousands of daily transactions across Nigeria, Kenya, and beyond.
+
+Beyond engineering, Motunrayo is one of the clearest voices on African fintech infrastructure. She was named a Top 50 Women Tech Titan in Nigeria by Women-in-Tech.org in 2025, has published in Tech Economy on open banking and cross-border payments, and has spoken at more than 20 conferences across the continent. She's personally mentored over 20 women into software engineering roles through programs including Wentors, HerSynergy × TechHer, and She Code Africa × Glovo.</p>
+        <div style="margin-top: 16px;">
+          <button class="copy-btn" data-copy-target="bio-long">Copy long bio</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Topics I can <em>talk about</em></h2>
+      <p class="section-intro">Areas where I've done the actual work and have opinions worth the stage time.</p>
+      <div class="mentor-programs">
+        <div class="program">
+          <div class="program-name">Backend architecture at scale</div>
+          <div class="program-detail">Designing systems that stay fast and reliable as transaction volume grows 10x.</div>
+        </div>
+        <div class="program">
+          <div class="program-name">API design for fintech</div>
+          <div class="program-detail">Patterns, pitfalls, and hard-won lessons from building payment and investment APIs.</div>
+        </div>
+        <div class="program">
+          <div class="program-name">Financial inclusion in Africa</div>
+          <div class="program-detail">What the infrastructure layer needs to do for fintech to reach the unbanked.</div>
+        </div>
+        <div class="program">
+          <div class="program-name">Women in backend engineering</div>
+          <div class="program-detail">Career navigation, visibility, and breaking into deep-tech roles.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Find me <em>online</em></h2>
+      <div class="mentor-programs" style="margin-top: 16px;">
+        <div class="program">
+          <div class="program-name">LinkedIn</div>
+          <div class="program-detail"><a href="https://www.linkedin.com/in/motunrayokoyejo/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;">linkedin.com/in/motunrayokoyejo ↗</a></div>
+        </div>
+        <div class="program">
+          <div class="program-name">X (Twitter)</div>
+          <div class="program-detail"><a href="https://x.com/Motushbae" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;">@Motushbae ↗</a></div>
+        </div>
+        <div class="program">
+          <div class="program-name">YouTube</div>
+          <div class="program-detail"><a href="https://www.youtube.com/@motunrayokoyejo" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;">@motunrayokoyejo ↗</a></div>
+        </div>
+        <div class="program">
+          <div class="program-name">TikTok</div>
+          <div class="program-detail"><a href="https://www.tiktok.com/@motushbae" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;">@motushbae ↗</a></div>
+        </div>
+        <div class="program">
+          <div class="program-name">GitHub</div>
+          <div class="program-detail"><a href="https://github.com/motunrayokoyejo" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;">github.com/motunrayokoyejo ↗</a></div>
+        </div>
+        <div class="program">
+          <div class="program-name">Email</div>
+          <div class="program-detail"><a href="mailto:koyejomotunrayo@gmail.com" style="color: var(--accent); text-decoration: none;">koyejomotunrayo@gmail.com</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-band">
+        <h3>Need something else?</h3>
+        <p>If you need something not on this page (a different headshot crop, a tailored bio for a specific angle, or tech specs for a talk), just drop me a line. I'm usually quick.</p>
+        <a class="cta-btn" href="mailto:koyejomotunrayo@gmail.com?subject=Press%20inquiry">Contact for press</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll('.copy-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var targetId = btn.getAttribute('data-copy-target');
+        var text = document.getElementById(targetId).innerText;
+        navigator.clipboard.writeText(text).then(function() {
+          var originalText = btn.innerText;
+          btn.innerText = '✓ Copied';
+          btn.classList.add('copied');
+          setTimeout(function() {
+            btn.innerText = originalText;
+            btn.classList.remove('copied');
+          }, 2000);
+        });
+      });
+    });
+  </script>
+</Layout>

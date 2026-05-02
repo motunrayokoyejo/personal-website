@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import portraitPinkArmsCrossed from '../assets/portrait-pink-arms-crossed.jpg';
+---
+
+<Layout 
+  title="About | Motunrayo Koyejo" 
+  currentPage="about"
+>
+  <header style="padding: 80px 0 40px;">
+    <div class="wrap">
+      <div class="eyebrow">About</div>
+      <h1>Hi, I'm <em>Motunrayo</em>.</h1>
+    </div>
+  </header>
+
+  <section style="padding: 20px 0;">
+    <div class="wrap">
+      <div class="about-intro">
+        <div class="photo ratio-3-4" style="background-image: url('/src/assets/portrait-pink-arms-crossed.jpg');"></div>
+        <div class="prose">
+          <p>I'm a senior backend engineer, which is a fancy way of saying I spend my days arguing with databases and my evenings explaining to people that yes, software really does run the world. I'm currently at Cowrywise, where I build the systems that move and safeguard money for millions of investors.</p>
+          <p>My path here wasn't straight. I studied Economics at Obafemi Awolowo University, and self-taught myself how to code. Almost everyone I've met in tech has a weird origin story, so maybe that's the rule rather than the exception. In five years, I've shipped products for platforms serving users across Nigeria, Kenya and the United States.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>What I do when I'm not <em>working</em></h2>
+      <div class="prose">
+        <p><strong>I take photos.</strong> Portraits, mostly. There's something about catching a person looking genuinely like themselves (not the face they make for cameras, but the one underneath) that I find completely absorbing. I carry a camera almost everywhere, which has made me the designated photographer at every wedding and birthday party my friends have had in the last three years. I consider this a feature.</p>
+        <p><strong>I create events where people connect.</strong> Something about bringing together the right mix of people, helping them have a great time, and watching new friendships form is deeply satisfying to me. I think it's the same instinct that makes me a decent engineer: a hundred small things that have to work together for one experience to feel effortless.</p>
+        <p><strong>And I teach.</strong> This is the thread running through almost everything I do outside my day job: speaking, mentoring, making videos on YouTube and TikTok. When I was starting out, I didn't have many African women in backend to look up to. The engineers I admired were brilliant, but the specific friction I was facing didn't show up in their advice. So I try to be visible now, so the next person doesn't have to look as hard.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Some <em>flattering</em> words</h2>
+      <div class="prose">
+        <p>In 2026, I was named one of the <a href="#" target="_blank">Top 50 Women Tech Titans in Nigeria</a> by Women-in-Tech.org (still a bit surreal to type that out). I've published thought leadership in Tech Economy on the infrastructure problems I care about most, spoken at over twenty conferences across Africa and beyond, and over the last three years I've mentored more than twenty women into software engineering roles.</p>
+        <p>I mention these not because I want to list accolades, but because if you're here wondering whether I know what I'm talking about, yes, I do. And if you're here wondering whether I'd make time for you, also yes, probably.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-band">
+        <h3>Say hello.</h3>
+        <p>Collaboration, a talk, a mentorship question, or a decent restaurant recommendation in Lagos: the inbox is open for all of it.</p>
+        <a class="cta-btn" href="mailto:koyejomotunrayo@gmail.com">Send me an email</a>
+      </div>
+    </div>
+  </section>
+</Layout>

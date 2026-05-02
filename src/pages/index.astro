@@ -1,0 +1,152 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+// Import images
+import portraitPinkDesk from '../assets/portrait-pink-desk.jpg';
+import portraitPinkHandUp from '../assets/portrait-pink-hand-up.jpg';
+import speakingApiConf24 from '../assets/speaking-apiconf24.png';
+import speakingFca25 from '../assets/speaking-fca25.png';
+---
+
+<Layout 
+  title="Motunrayo Koyejo | Engineer, Creator, Speaker, Mentor" 
+  currentPage="index"
+>
+  <header style="padding: 90px 0 40px;">
+    <div class="wrap">
+      <div class="eyebrow">Engineer · Creator · Speaker · Mentor</div>
+      <h1>Hi, I'm Motunrayo, and I build the <em>quiet</em> systems that keep fintech running.</h1>
+      <p class="lede">By day, I'm a backend engineer shaping payment and investment infrastructure across Africa. By evening, I'm somewhere else entirely: on a conference stage, recording a TikTok, or on a call with a mentee trying to land her first engineering role. This little corner of the internet is where all of that lives.</p>
+      <div class="hero-photo"></div>
+      <div class="scroll-hint">keep scrolling, there's more</div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="recognition">
+      <div class="recognition-grid">
+        <div>
+          <div class="stat-num">Top 50</div>
+          <div class="stat-label">Named a Women Tech Titan in Nigeria, 2025</div>
+        </div>
+        <div>
+          <div class="stat-num">20+</div>
+          <div class="stat-label">Conference talks across Africa and beyond</div>
+        </div>
+        <div>
+          <div class="stat-num">40+</div>
+          <div class="stat-label">Women mentored into their first tech roles</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pillar: Work -->
+  <section style="padding: 0;">
+    <div class="wrap">
+      <div class="pillar">
+        <div class="pillar-copy">
+          <div class="section-label">Work</div>
+          <h2>Backend engineering, in <em>fintech</em>.</h2>
+          <p>I build the things you never see until they break: payment flows, reconciliation pipelines, the kind of systems that have to work at 3am when a merchant somewhere is trying to move money. Five years in, and I still find it thrilling. Currently at Cowrywise.</p>
+          <a class="pillar-link" href="/work">See what I've built →</a>
+        </div>
+        <div class="photo ratio-4-3">
+          <Image 
+            src={portraitPinkDesk} 
+            alt="Motunrayo at her desk" 
+            style="object-position: center 20%;"
+          />
+        </div>
+      </div>
+
+      <div class="pillar reverse">
+        <div class="pillar-copy">
+          <div class="section-label">Creator</div>
+          <h2>Making tech feel <em>less scary</em>, one video at a time.</h2>
+          <p>A few years into my career, I realised the stuff I'd figured out (how to actually read a codebase, how to prep for an interview without panicking, what a day in a backend engineer's life looks like) wasn't being explained anywhere a beginner
+          could find it. So I started making videos. Now I do it on YouTube and TikTok, mostly because I enjoy it.</p>
+          <a class="pillar-link" href="/videos">Come watch with me →</a>
+        </div>
+        <div class="photo ratio-4-3">
+          <Image 
+            src={portraitPinkHandUp} 
+            alt="Motunrayo portrait with hand up"
+          />
+        </div>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-copy">
+          <div class="section-label">Speaking</div>
+          <h2>On stage, <em>twenty times over</em>.</h2>
+          <p>There's something particular about standing in front of a room of strangers and realising that a mistake you made two years ago can save them six months of pain. That's the addiction. I've spoken at over twenty conferences across Africa and beyond, on backend architecture, API design, fintech, and what it's like to be a woman building any of it.</p>
+          <a class="pillar-link" href="/speaking">See where I've been →</a>
+        </div>
+        <div class="hero-photo" style="aspect-ratio: 4/3;"></div>
+      </div>
+
+      <div class="pillar reverse">
+        <div class="pillar-copy">
+          <div class="section-label">Mentoring</div>
+          <h2>Holding the door <em>open</em>.</h2>
+          <p>When I started out, I pieced my career together from advice meant for people who looked nothing like me. It worked (eventually), but it took longer than it should have. Now I mentor women at the start of their journey through Wentors, HerSynergy, She Code Africa, and Mentoring Club. Most of them are shipping code for real companies now.</p>
+          <a class="pillar-link" href="/mentoring">Learn about my mentoring →</a>
+        </div>
+        <div class="photo ratio-4-3">
+          <Image 
+            src={speakingApiConf24} 
+            alt="Motunrayo speaking at API Conference 2024" 
+            style="object-position: center 30%;"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo strip: "outside of work" -->
+  <section style="padding: 20px 0 60px;">
+    <div class="wrap">
+      <div class="section-label" style="text-align: center; margin-bottom: 12px;">Off the clock</div>
+      <h2 style="text-align: center; margin-bottom: 8px;">When I'm not in a <em>terminal</em>…</h2>
+      <p class="section-intro" style="text-align: center; margin-left: auto; margin-right: auto;">I'm usually behind a camera, on a plane, or planning the kind of dinner my friends won't stop talking about months later.</p>
+      <div class="photo-strip">
+        <div class="photo ratio-1-1">
+          <Image 
+            src={speakingFca25} 
+            alt="Motunrayo speaking at FCA 2025"
+          />
+        </div>
+        <div class="photo-ph"><span>travel shot (coming)</span></div>
+        <div class="photo-ph"><span>an event (coming)</span></div>
+      </div>
+      <p style="text-align: center; margin-top: 32px;">
+        <a class="pillar-link" href="/about">More about me →</a>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-label">From the notebook</div>
+      <h2>Some of what I've been <em>thinking about</em>.</h2>
+
+      <a class="article" href="https://techeconomy.ng/until-we-fix-cross-border-payments-africas-trade-dream-is-a-mirage/" target="_blank" rel="noopener">
+        <div class="article-meta">Tech Economy · 2025</div>
+        <div class="article-title">Until we fix cross-border payments, Africa's trade dream is a mirage</div>
+        <div class="article-excerpt">The continent has been talking about a single trading bloc for years. But every time a Lagos merchant tries to pay a Nairobi supplier, the infrastructure quietly reminds us we aren't there yet.</div>
+      </a>
+
+      <a class="article" href="https://techeconomy.ng/how-open-banking-apis-can-revolutionize-fintech-in-africa/" target="_blank" rel="noopener">
+        <div class="article-meta">Tech Economy · 2025</div>
+        <div class="article-title">How open banking APIs can revolutionise fintech in Africa</div>
+        <div class="article-excerpt">What if you could actually see all your money across all your banks in one place? It sounds simple. The engineering and regulation to make it real is not.</div>
+      </a>
+
+      <p style="margin-top: 32px;">
+        <a class="pillar-link" href="/writing">Everything I've written →</a>
+      </p>
+    </div>
+  </section>
+</Layout>

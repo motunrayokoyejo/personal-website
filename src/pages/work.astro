@@ -1,0 +1,82 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Work | Motunrayo Koyejo" 
+  currentPage="work"
+>
+  <header style="padding: 80px 0 20px;">
+    <div class="wrap">
+      <div class="eyebrow">Work</div>
+      <h1>Five years of making fintech <em>behave</em>.</h1>
+      <p class="lede">I've spent my whole career building the backend of financial services: payment systems, reconciliation pipelines, and APIs that have to hold up even when everything around them is going sideways. Here's the long version.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <div class="role">
+        <div class="role-head">
+          <div class="role-title">Senior Backend Engineer</div>
+          <div class="role-date">April 2025 to Present</div>
+        </div>
+        <div class="role-company">Cowrywise: an investment platform for 2m+ people</div>
+        <p class="role-desc">I lead the backend work across payments, disbursement, and reconciliation for a platform managing billions in investment assets. Most days are some mix of shipping, reviewing, and quietly paying down technical debt so tomorrow's shipping is faster.</p>
+        <ul>
+          <li>Designed and built a reconciliation microservice that audits daily transactions, matching provider-reported flows against internal records. It replaced a process that used to be done by humans, and it has not complained once about the hours.</li>
+          <li>Led a push across payment flows that significantly improved transaction success rates by integrating multiple providers, fixing timeout handling, and cleaning up retry logic that had been built in a hurry.</li>
+          <li>Refactored the latency-sensitive microservices handling financial operations, dramatically improving API response times. Users don't write thank-you notes for latency improvements, but they do stop getting frustrated.</li>
+          <li>Stood up end-to-end observability with Prometheus and Grafana, which dramatically reduced the time it takes us to detect and resolve incidents.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <div class="role-title">Software Engineer</div>
+          <div class="role-date">July 2021 to March 2025</div>
+        </div>
+        <div class="role-company">Brass: business banking for African founders</div>
+        <p class="role-desc">My first proper engineering role, and in hindsight the one that shaped how I think about everything. I built and maintained the backend services running a fast-growing business banking platform, eventually leading technical strategy for the Kenya expansion.</p>
+        <ul>
+          <li>Built high-availability payment APIs processing large transaction volumes, significantly improving processing speed and cutting downtime.</li>
+          <li>Architected the backend for the Kenya expansion, which drove significant revenue growth and brought on many new business clients. It was the kind of work where you feel the scale decisions you're making ripple out into real businesses.</li>
+          <li>Substantially reduced infrastructure costs while improving system performance through AWS, Redis, and MySQL tuning. A rare win-win that kept both engineering and finance happy.</li>
+          <li>Optimised backend infrastructure to support significant transaction growth while keeping the lights on through peak periods.</li>
+          <li>Spearheaded customer success initiatives that dramatically reduced technical support resolution time, mostly by fixing the underlying causes of the tickets instead of triaging them faster.</li>
+          <li>Scaled infrastructure for new financial product launches, which contributed to strong product adoption.</li>
+        </ul>
+      </div>
+      <div class="role">
+        <div class="role-head">
+          <div class="role-title">Technical Product Manager</div>
+          <div class="role-date">January to July 2021</div>
+        </div>
+        <div class="role-company">TM30</div>
+        <p class="role-desc">A brief but useful detour into product. Led development of three financial products, defined vision, and coordinated cross-functional delivery. This is when I realised I preferred being the one building to the one describing what should be built.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>The stack I <em>reach for</em></h2>
+      <p class="section-intro">Languages and tools I've shipped real, production systems with (not "familiar with" in the LinkedIn sense).</p>
+      <div class="prose">
+        <p><strong>Backend & APIs:</strong> Python, Django, FastAPI, TypeScript, Node.js, NestJS, Go, PHP, Laravel</p>
+        <p><strong>Databases & messaging:</strong> MySQL, PostgreSQL, MongoDB, Redis, Kafka, Celery</p>
+        <p><strong>Cloud & infrastructure:</strong> AWS (Solutions Architect Associate, Cloud Practitioner certified), Docker, Prometheus, Grafana, GitHub Actions, Jenkins</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-band">
+        <h3>Hiring, collaborating, or curious?</h3>
+        <p>I like talking about backend engineering, fintech, and the systems problems currently keeping me up at night. Drop me a line.</p>
+        <a class="cta-btn" href="mailto:koyejomotunrayo@gmail.com">Get in touch</a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,71 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  currentPage?: string;
+}
+
+const { title, description = "Engineer, Creator, Speaker, Mentor", currentPage = "" } = Astro.props;
+
+// Helper function to determine if a nav link should be active
+function isActiveLink(href: string, currentPage: string): boolean {
+  if (href === 'index.html' && (currentPage === '' || currentPage === 'index')) {
+    return true;
+  }
+  return href.replace('.html', '') === currentPage;
+}
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <nav class="site">
+      <div class="wrap">
+        <div class="inner">
+          <a class="brand" href="/">Motunrayo Koyejo</a>
+          <ul>
+            <li><a class={`nav-link${isActiveLink('about.html', currentPage) ? ' active' : ''}`} href="/about">About</a></li>
+            <li><a class={`nav-link${isActiveLink('work.html', currentPage) ? ' active' : ''}`} href="/work">Work</a></li>
+            <li><a class={`nav-link${isActiveLink('speaking.html', currentPage) ? ' active' : ''}`} href="/speaking">Speaking</a></li>
+            <li><a class={`nav-link${isActiveLink('mentoring.html', currentPage) ? ' active' : ''}`} href="/mentoring">Mentoring</a></li>
+            <li><a class={`nav-link${isActiveLink('videos.html', currentPage) ? ' active' : ''}`} href="/videos">Videos</a></li>
+            <li><a class={`nav-link${isActiveLink('writing.html', currentPage) ? ' active' : ''}`} href="/writing">Writing</a></li>
+            <li><a class={`nav-link${isActiveLink('press.html', currentPage) ? ' active' : ''}`} href="/press">Press</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <slot />
+
+    <footer class="site">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-intro">Want to talk shop, invite me to speak, or just say hi?</p>
+            <a class="footer-email" href="mailto:koyejomotunrayo@gmail.com">koyejomotunrayo@gmail.com</a>
+          </div>
+          <ul class="social-list">
+            <li><a href="https://github.com/motunrayokoyejo" target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/motunrayokoyejo/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://x.com/Motushbae" target="_blank" rel="noopener">X ↗</a></li>
+            <li><a href="https://www.youtube.com/@motunrayokoyejo" target="_blank" rel="noopener">YouTube ↗</a></li>
+            <li><a href="https://www.tiktok.com/@motushbae" target="_blank" rel="noopener">TikTok ↗</a></li>
+          </ul>
+        </div>
+        <div class="footer-copy">© 2026 Motunrayo Koyejo · Lagos, Nigeria</div>
+      </div>
+    </footer>
+
+  </body>
+</html>
