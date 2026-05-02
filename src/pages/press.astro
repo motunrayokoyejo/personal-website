@@ -1,9 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Image } from 'astro:assets';
-import portraitPinkArmsCrossed from '../assets/portrait-pink-arms-crossed.jpg';
-import portraitPinkDesk from '../assets/portrait-pink-desk.jpg';
-import headshotCropped from '../assets/headshot-cropped.jpg';
 ---
 
 <Layout 
@@ -205,16 +201,21 @@ Beyond engineering, Motunrayo is one of the clearest voices on African fintech i
     document.querySelectorAll('.copy-btn').forEach(function(btn) {
       btn.addEventListener('click', function() {
         var targetId = btn.getAttribute('data-copy-target');
-        var text = document.getElementById(targetId).innerText;
-        navigator.clipboard.writeText(text).then(function() {
-          var originalText = btn.innerText;
-          btn.innerText = '✓ Copied';
-          btn.classList.add('copied');
-          setTimeout(function() {
-            btn.innerText = originalText;
-            btn.classList.remove('copied');
-          }, 2000);
-        });
+        if (targetId) {
+          var element = document.getElementById(targetId);
+          if (element) {
+            var text = (element as HTMLElement).innerText;
+            navigator.clipboard.writeText(text).then(function() {
+              var originalText = (btn as HTMLElement).innerText;
+              (btn as HTMLElement).innerText = '✓ Copied';
+              btn.classList.add('copied');
+              setTimeout(function() {
+                (btn as HTMLElement).innerText = originalText;
+                btn.classList.remove('copied');
+              }, 2000);
+            });
+          }
+        }
       });
     });
   </script>
