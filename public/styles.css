@@ -183,7 +183,7 @@ section { padding: 72px 0; }
 .hero-photo {
   width: 100%;
   aspect-ratio: 4 / 3;
-  background: url('photos/speaking-web3lagos.jpg') center 25% / cover no-repeat;
+  background: url('speaking-web3lagos.jpg') center 25% / cover no-repeat;
   border-radius: 2px;
 }
 
