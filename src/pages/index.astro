@@ -6,7 +6,6 @@ import { Image } from 'astro:assets';
 import portraitPinkDesk from '../assets/portrait-pink-desk.jpg';
 import portraitPinkHandUp from '../assets/portrait-pink-hand-up.jpg';
 import speakingApiConf24 from '../assets/speaking-apiconf24.png';
-import speakingFca25 from '../assets/speaking-fca25.png';
 ---
 
 <Layout 
@@ -18,7 +17,7 @@ import speakingFca25 from '../assets/speaking-fca25.png';
       <div class="eyebrow">Engineer · Creator · Speaker · Mentor</div>
       <h1>Hi, I'm Motunrayo, and I build the <em>quiet</em> systems that keep fintech running.</h1>
       <p class="lede">By day, I'm a backend engineer shaping payment and investment infrastructure across Africa. By evening, I'm somewhere else entirely: on a conference stage, recording a TikTok, or on a call with a mentee trying to land her first engineering role. This little corner of the internet is where all of that lives.</p>
-      <div class="hero-photo"></div>
+      <div class="hero-photo" style="background-image: url('/headshot-mint.jpg'); background-position: center 30%;"></div>
       <div class="scroll-hint">keep scrolling, there's more</div>
     </div>
   </header>
@@ -28,7 +27,7 @@ import speakingFca25 from '../assets/speaking-fca25.png';
       <div class="recognition-grid">
         <div>
           <div class="stat-num">Top 50</div>
-          <div class="stat-label">Named a Women Tech Titan in Nigeria, 2025</div>
+          <div class="stat-label">Named a Women Tech Titan in Nigeria, 2026</div>
         </div>
         <div>
           <div class="stat-num">20+</div>
@@ -49,14 +48,15 @@ import speakingFca25 from '../assets/speaking-fca25.png';
         <div class="pillar-copy">
           <div class="section-label">Work</div>
           <h2>Backend engineering, in <em>fintech</em>.</h2>
-          <p>I build the things you never see until they break: payment flows, reconciliation pipelines, the kind of systems that have to work at 3am when a merchant somewhere is trying to move money. Five years in, and I still find it thrilling. Currently at Cowrywise.</p>
+          <p>My work sits where software, money, and scale meet.</p>
+          <p>I've spent the last six years building and improving the systems that power financial products, from payment infrastructure and banking integrations to investment platforms and market expansion initiatives. I enjoy turning complex operational challenges into reliable systems that customers can trust.</p>
           <a class="pillar-link" href="/work">See what I've built →</a>
         </div>
-        <div class="photo ratio-4-3">
-          <Image 
-            src={portraitPinkDesk} 
-            alt="Motunrayo at her desk" 
-            style="object-position: center 20%;"
+        <div class="photo ratio-3-4">
+          <Image
+            src={portraitPinkDesk}
+            alt="Motunrayo at her desk"
+            style="object-position: center 30%;"
           />
         </div>
       </div>
@@ -69,10 +69,11 @@ import speakingFca25 from '../assets/speaking-fca25.png';
           could find it. So I started making videos. Now I do it on YouTube and TikTok, mostly because I enjoy it.</p>
           <a class="pillar-link" href="/videos">Come watch with me →</a>
         </div>
-        <div class="photo ratio-4-3">
-          <Image 
-            src={portraitPinkHandUp} 
+        <div class="photo ratio-3-4">
+          <Image
+            src={portraitPinkHandUp}
             alt="Motunrayo portrait with hand up"
+            style="object-position: center 25%;"
           />
         </div>
       </div>
@@ -80,8 +81,9 @@ import speakingFca25 from '../assets/speaking-fca25.png';
       <div class="pillar">
         <div class="pillar-copy">
           <div class="section-label">Speaking</div>
-          <h2>On stage, <em>twenty times over</em>.</h2>
-          <p>There's something particular about standing in front of a room of strangers and realising that a mistake you made two years ago can save them six months of pain. That's the addiction. I've spoken at over twenty conferences across Africa and beyond, on backend architecture, API design, fintech, and what it's like to be a woman building any of it.</p>
+          <h2>On stage, <em>sharing what I've learned</em>.</h2>
+          <p>I've spent my career building products used by millions of people, and speaking gives me a chance to share the lessons behind that work.</p>
+          <p>Over the years, I've spoken to engineers, founders, and students about backend engineering, fintech, APIs, career growth, and the realities of building technology in Africa. I enjoy breaking down complex ideas into stories and lessons people can immediately apply.</p>
           <a class="pillar-link" href="/speaking">See where I've been →</a>
         </div>
         <div class="hero-photo" style="aspect-ratio: 4/3;"></div>
@@ -91,62 +93,21 @@ import speakingFca25 from '../assets/speaking-fca25.png';
         <div class="pillar-copy">
           <div class="section-label">Mentoring</div>
           <h2>Holding the door <em>open</em>.</h2>
-          <p>When I started out, I pieced my career together from advice meant for people who looked nothing like me. It worked (eventually), but it took longer than it should have. Now I mentor women at the start of their journey through Wentors, HerSynergy, She Code Africa, and Mentoring Club. Most of them are shipping code for real companies now.</p>
+          <p>When I started out, I spent years trying to answer questions that seem obvious now:</p>
+          <p><em>Am I good enough? What should I learn next? How do I get my first opportunity?</em></p>
+          <p>I didn't always have someone to ask.</p>
+          <p>I care so deeply about mentoring women in technology. I enjoy helping early-career engineers navigate the uncertainty that comes with starting out, whether that's technical growth, career direction, interviewing, or simply building confidence.</p>
           <a class="pillar-link" href="/mentoring">Learn about my mentoring →</a>
         </div>
-        <div class="photo ratio-4-3">
-          <Image 
-            src={speakingApiConf24} 
-            alt="Motunrayo speaking at API Conference 2024" 
-            style="object-position: center 30%;"
+        <div class="photo ratio-3-4">
+          <Image
+            src={speakingApiConf24}
+            alt="Motunrayo speaking at API Conference 2024"
+            style="object-position: center 20%;"
           />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Photo strip: "outside of work" -->
-  <section style="padding: 20px 0 60px;">
-    <div class="wrap">
-      <div class="section-label" style="text-align: center; margin-bottom: 12px;">Off the clock</div>
-      <h2 style="text-align: center; margin-bottom: 8px;">When I'm not in a <em>terminal</em>…</h2>
-      <p class="section-intro" style="text-align: center; margin-left: auto; margin-right: auto;">I'm usually behind a camera, on a plane, or planning the kind of dinner my friends won't stop talking about months later.</p>
-      <div class="photo-strip">
-        <div class="photo ratio-1-1">
-          <Image 
-            src={speakingFca25} 
-            alt="Motunrayo speaking at FCA 2025"
-          />
-        </div>
-        <div class="photo-ph"><span>travel shot (coming)</span></div>
-        <div class="photo-ph"><span>an event (coming)</span></div>
-      </div>
-      <p style="text-align: center; margin-top: 32px;">
-        <a class="pillar-link" href="/about">More about me →</a>
-      </p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="section-label">From the notebook</div>
-      <h2>Some of what I've been <em>thinking about</em>.</h2>
-
-      <a class="article" href="https://techeconomy.ng/until-we-fix-cross-border-payments-africas-trade-dream-is-a-mirage/" target="_blank" rel="noopener">
-        <div class="article-meta">Tech Economy · 2025</div>
-        <div class="article-title">Until we fix cross-border payments, Africa's trade dream is a mirage</div>
-        <div class="article-excerpt">The continent has been talking about a single trading bloc for years. But every time a Lagos merchant tries to pay a Nairobi supplier, the infrastructure quietly reminds us we aren't there yet.</div>
-      </a>
-
-      <a class="article" href="https://techeconomy.ng/how-open-banking-apis-can-revolutionize-fintech-in-africa/" target="_blank" rel="noopener">
-        <div class="article-meta">Tech Economy · 2025</div>
-        <div class="article-title">How open banking APIs can revolutionise fintech in Africa</div>
-        <div class="article-excerpt">What if you could actually see all your money across all your banks in one place? It sounds simple. The engineering and regulation to make it real is not.</div>
-      </a>
-
-      <p style="margin-top: 32px;">
-        <a class="pillar-link" href="/writing">Everything I've written →</a>
-      </p>
-    </div>
-  </section>
 </Layout>

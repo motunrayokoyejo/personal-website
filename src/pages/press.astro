@@ -10,7 +10,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="wrap">
       <div class="eyebrow">Press kit</div>
       <h1>Everything you need to <em>feature me</em>.</h1>
-      <p class="lede">Putting together an event program, show notes, or press piece? Grab what you need from here. The bios are copy-paste ready, the headshots are high-resolution, and the facts are already spelled right. I've tried to make this as easy as possible because you're probably on a deadline.</p>
+      <p class="lede">Putting together an event program, show notes, or press piece? Grab what you need from here.</p>
     </div>
   </header>
 
@@ -26,10 +26,17 @@ import Layout from '../layouts/Layout.astro';
             <span class="dl-hint">Download ↓</span>
           </div>
         </a>
-        <a class="press-headshot" href="/portrait-pink-desk.jpg" download>
-          <div class="photo ratio-3-4" style="background-image: url('/portrait-pink-desk.jpg');"></div>
+        <a class="press-headshot" href="/headshot-mint.jpg" download>
+          <div class="photo ratio-3-4" style="background-image: url('/headshot-mint.jpg'); background-position: center 20%;"></div>
           <div class="dl-label">
-            <strong>Seated · Portrait</strong>
+            <strong>Portrait · Green</strong>
+            <span class="dl-hint">Download ↓</span>
+          </div>
+        </a>
+        <a class="press-headshot" href="/headshot-mint-seated.jpg" download>
+          <div class="photo ratio-3-4" style="background-image: url('/headshot-mint-seated.jpg'); background-position: center 20%;"></div>
+          <div class="dl-label">
+            <strong>Seated · Green</strong>
             <span class="dl-hint">Download ↓</span>
           </div>
         </a>
@@ -47,7 +54,6 @@ import Layout from '../layouts/Layout.astro';
   <section>
     <div class="wrap">
       <h2>Quick <em>facts</em></h2>
-      <p class="section-intro">The basics that usually go in a speaker intro. Name pronunciation included because it's gotten butchered on enough stages that I figured I'd just put it here.</p>
       <div class="press-facts">
         <div class="press-fact">
           <span class="press-fact-label">Name</span>
@@ -96,7 +102,7 @@ import Layout from '../layouts/Layout.astro';
           <span class="bio-block-label">Short · one sentence</span>
           <span class="bio-block-count">~25 words</span>
         </div>
-        <p class="bio-block-text" id="bio-short">Motunrayo Koyejo is a senior backend engineer building fintech infrastructure across Africa, a speaker at 20+ conferences, and a mentor to early-career women in tech.</p>
+        <p class="bio-block-text" id="bio-short">Motunrayo Koyejo is a software engineer, speaker, and mentor passionate about building reliable financial systems and helping the next generation of women in tech grow their careers.</p>
         <div style="margin-top: 16px;">
           <button class="copy-btn" data-copy-target="bio-short">Copy short bio</button>
         </div>
@@ -105,10 +111,13 @@ import Layout from '../layouts/Layout.astro';
       <!-- Medium bio -->
       <div class="bio-block">
         <div class="bio-block-header">
-          <span class="bio-block-label">Medium · one paragraph</span>
-          <span class="bio-block-count">~70 words</span>
+          <span class="bio-block-label">Medium · two paragraphs</span>
+          <span class="bio-block-count">~75 words</span>
         </div>
-        <p class="bio-block-text" id="bio-medium">Motunrayo Koyejo is a senior backend engineer with over five years of experience building secure, scalable financial infrastructure. She's currently at Cowrywise, where she works on payments, reconciliation, and high-throughput APIs for an investment platform serving 500,000+ users. Outside of engineering, Motunrayo has spoken at 20+ conferences on backend architecture, API design, and fintech, and mentors early-career women through programs including Wentors, HerSynergy × TechHer, and She Code Africa.</p>
+        <div class="bio-block-text" id="bio-medium">
+          <p>Motunrayo Koyejo is a senior software engineer who enjoys solving complex problems in financial technology. Over the past several years, she has worked on the systems behind payments, banking, investments, and other products that people rely on every day.</p>
+          <p>Beyond engineering, she is a frequent conference speaker and an active mentor to women entering technology. Through her talks, writing, and mentorship, she helps engineers grow their technical skills, navigate their careers, and build with confidence.</p>
+        </div>
         <div style="margin-top: 16px;">
           <button class="copy-btn" data-copy-target="bio-medium">Copy medium bio</button>
         </div>
@@ -117,12 +126,15 @@ import Layout from '../layouts/Layout.astro';
       <!-- Long bio -->
       <div class="bio-block">
         <div class="bio-block-header">
-          <span class="bio-block-label">Long · two paragraphs</span>
-          <span class="bio-block-count">~165 words</span>
+          <span class="bio-block-label">Long · four paragraphs</span>
+          <span class="bio-block-count">~150 words</span>
         </div>
-        <p class="bio-block-text" id="bio-long">Motunrayo Koyejo is a senior backend engineer specialising in financial infrastructure. She's currently at Cowrywise, where she leads backend work across payments, disbursement, and reconciliation for an investment platform serving over 500,000 users. Before that, she led technical strategy for Brass's Kenya market expansion, work that drove 95% revenue growth and onboarded 60% more business clients. Over five years in fintech, she's shipped systems that handle hundreds of thousands of daily transactions across Nigeria, Kenya, and beyond.
-
-Beyond engineering, Motunrayo is one of the clearest voices on African fintech infrastructure. She was named a Top 50 Women Tech Titan in Nigeria by Women-in-Tech.org in 2025, has published in Tech Economy on open banking and cross-border payments, and has spoken at more than 20 conferences across the continent. She's personally mentored over 20 women into software engineering roles through programs including Wentors, HerSynergy × TechHer, and She Code Africa × Glovo.</p>
+        <div class="bio-block-text" id="bio-long">
+          <p>Motunrayo Koyejo is a senior software engineer passionate about building reliable technology that solves real problems. Her work has focused on financial systems, from payments and banking infrastructure to investment platforms and the services that keep them running behind the scenes.</p>
+          <p>What excites her most is the intersection of technology and impact. She enjoys working on complex engineering challenges, translating technical concepts into practical lessons, and sharing what she's learned through speaking, writing, and mentorship.</p>
+          <p>Over the years, she has spoken at conferences and community events across Africa on topics including backend engineering, APIs, fintech, and career growth. She is equally passionate about supporting women entering technology, helping them build confidence, develop technical skills, and navigate the early stages of their careers.</p>
+          <p>Whether she's building systems, speaking on stage, or mentoring an aspiring engineer, her goal remains the same: to leave people and technology better than she found them.</p>
+        </div>
         <div style="margin-top: 16px;">
           <button class="copy-btn" data-copy-target="bio-long">Copy long bio</button>
         </div>
